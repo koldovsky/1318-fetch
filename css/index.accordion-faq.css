@@ -1,0 +1,41 @@
+.faq-accordion {
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.faq-accordion__item {
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-accordion__header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-accordion__title {
+  font-weight: bold;
+}
+
+.faq-accordion__content {
+    padding: 10px;
+    overflow: hidden; /* Important for animation */
+    max-height: 0; /* Initially hidden */
+    transition: max-height 0.3s ease-in-out; /* Animation */
+}
+
+.faq-accordion__header.faq-accordion__header--active .faq-accordion__arrow {
+    transform: rotate(180deg);
+}
+
+.faq-accordion__arrow {
+    transition: transform 0.2s ease-in-out;
+}
+
+.faq-accordion__content.faq-accordion__content--open {
+    max-height: 500px; /* Adjust as needed */
+}
