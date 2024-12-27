@@ -5,6 +5,7 @@ function init() {
   import("./index.product-carousel-animated.js");
   import("./index.product-list.js");
   import("./index.accordion-faq.js");
+  import("./index.footer-form.js");
 }
 
 const totalPartials = document.querySelectorAll(
